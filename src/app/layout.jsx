@@ -5,7 +5,7 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Pressbox',
-    default: 'Pressbox - Empowering author-owned publications',
+    default: 'Newsroom - Empowering author-owned publications',
   },
 }
 
