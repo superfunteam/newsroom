@@ -168,7 +168,7 @@ export default async function Home() {
             A tale as old as time: a beloved publication gets a new boss or owner, everyone is fired (or better yet, everyone quits), and a new author-owned publication is born.
           </p>
           <p className="mt-6 text-xl text-neutral-600 font-bold">
-           Pressbox is here to help.
+           Newsroom is here to help.
           </p>
         </FadeIn>
       </Container>

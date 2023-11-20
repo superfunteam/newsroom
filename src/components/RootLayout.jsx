@@ -132,7 +132,7 @@ function Navigation() {
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/process">On Quitting</NavigationItem>
-        <NavigationItem href="/blog">PressBox News</NavigationItem>
+        <NavigationItem href="/blog">Newsroom News</NavigationItem>
       </NavigationRow>
     </nav>
   )
