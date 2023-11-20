@@ -26,7 +26,7 @@ export function Testimonial({ children, client, className }) {
               </p>
             </blockquote>
             <figcaption className="mt-10">
-              <Image src={client.logo} alt={client.name} unoptimized />
+              Taylor, Android and Me (Acquired)
             </figcaption>
           </figure>
         </FadeIn>

@@ -72,7 +72,7 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
-            Ready to Quit
+            <span className="text-lg">Call it Quits</span>
           </Button>
           <button
             ref={toggleRef}
@@ -128,7 +128,7 @@ function Navigation() {
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
         <NavigationItem href="/work">Publications</NavigationItem>
-        <NavigationItem href="/about">Joining Us</NavigationItem>
+        <NavigationItem href="/about">Join Us</NavigationItem>
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/process">On Quitting</NavigationItem>
@@ -215,7 +215,7 @@ function RootLayoutInner({ children }) {
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      Newsroom Team
                     </h2>
                     <Offices
                       invert

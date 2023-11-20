@@ -7,28 +7,20 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
-    title: 'Work',
+    title: 'Publications',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
-      {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      },
+      { title: 'Unseal (Temp)', href: '/work/unseal' },
+      { title: 'More soon', href: '#' },
+      
     ],
   },
   {
     title: 'Company',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'About', href: '#' },
+      { title: 'Process', href: '#' },
+      { title: 'Blog', href: '#' },
+      { title: 'Contact us', href: '#' },
     ],
   },
   {
@@ -82,11 +74,10 @@ function NewsletterForm() {
   return (
     <form className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
+        Step into the Newsroom
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        Subscribe to our latest updates, happenings, and launches. We'll be nice.
       </p>
       <div className="relative mt-6">
         <input
@@ -102,7 +93,7 @@ function NewsletterForm() {
             aria-label="Submit"
             className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
           >
-            <ArrowIcon className="w-4" />
+          →
           </button>
         </div>
       </div>
