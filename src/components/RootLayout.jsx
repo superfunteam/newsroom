@@ -127,12 +127,12 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Publications</NavigationItem>
-        <NavigationItem href="/about">Join Us</NavigationItem>
+        <NavigationItem href="#">Publications</NavigationItem>
+        <NavigationItem href="#">Join Us</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">On Quitting</NavigationItem>
-        <NavigationItem href="/blog">Newsroom News</NavigationItem>
+        <NavigationItem href="#">On Quitting</NavigationItem>
+        <NavigationItem href="#">Newsroom News</NavigationItem>
       </NavigationRow>
     </nav>
   )
