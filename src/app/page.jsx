@@ -8,27 +8,19 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoNew from '@/images/clients/new/logo-add.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['New', logoNew],
+  ['New', logoNew],
+  ['New', logoNew],
+  ['New', logoNew],
+  ['New', logoNew],
+  ['New', logoNew],
+  ['New', logoNew],
+  ['New', logoNew],
 ]
 
 function Clients() {
@@ -37,7 +29,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Now recruiting the next class of independent publications
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -68,7 +60,7 @@ function CaseStudies({ caseStudies }) {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We've been bought before. It sucks. But given the way things are these days, getting acquired isn't the end of the story.
+          We've been bought before. It sucks. But given the way things are going these days, getting acquired (or fired) is just the beginning of the story.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -187,7 +179,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'New', logo: logoNew }}
       >
         We started at zero and built to 5m pageviews per month. I kept definitely kept writing and beating down doors, but a lot of that was Clark and Angie picking up slack.
       </Testimonial>

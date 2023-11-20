@@ -1,0 +1,16 @@
+{
+  "/_not-found": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/blog/page": "/blog",
+  "/about/page": "/about",
+  "/contact/page": "/contact",
+  "/work/page": "/work",
+  "/process/page": "/process",
+  "/blog/a-short-guide-to-component-naming/page": "/blog/a-short-guide-to-component-naming",
+  "/blog/future-of-web-development/page": "/blog/future-of-web-development",
+  "/blog/3-lessons-we-learned-going-back-to-the-office/page": "/blog/3-lessons-we-learned-going-back-to-the-office",
+  "/work/family-fund/page": "/work/family-fund",
+  "/work/phobia/page": "/work/phobia",
+  "/work/unseal/page": "/work/unseal"
+}

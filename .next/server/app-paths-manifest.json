@@ -1,0 +1,16 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/work/page": "app/work/page.js",
+  "/process/page": "app/process/page.js",
+  "/blog/a-short-guide-to-component-naming/page": "app/blog/a-short-guide-to-component-naming/page.js",
+  "/blog/future-of-web-development/page": "app/blog/future-of-web-development/page.js",
+  "/blog/3-lessons-we-learned-going-back-to-the-office/page": "app/blog/3-lessons-we-learned-going-back-to-the-office/page.js",
+  "/work/family-fund/page": "app/work/family-fund/page.js",
+  "/work/phobia/page": "app/work/phobia/page.js",
+  "/work/unseal/page": "app/work/unseal/page.js"
+}
