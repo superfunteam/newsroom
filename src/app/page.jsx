@@ -11,6 +11,8 @@ import { Testimonial } from '@/components/Testimonial'
 import logoNew from '@/images/clients/new/logo-add.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
+import captureImage from '@/images/capture.png';
+console.log(captureImage);
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
@@ -194,24 +196,22 @@ export default async function Home() {
       <p className="mt-6 text-lg leading-8 text-gray-600">
         It seems simple but apprently it's not. Let's change that. We've been bought before. It sucks. But given the way things are going these days, getting acquired (or fired) is just the beginning of the story.
       </p>
-      <p className="font-bold mt-2">Newsroom comes with everything your pub needs.</p>
+      <p className="font-bold mt-2">Newsroom comes with everything your pub needs. Here's a sample pub.</p>
     </div>
   </div>
-  <div className="relative overflow-hidden pt-16 hidden">
+  <div className="relative overflow-hidden pt-16">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <img
-        src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+        src={captureImage.src}
         alt="App screenshot"
         className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
         width={2432}
         height={1442}
       />
-      <div className="relative" aria-hidden="true">
-        <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
-      </div>
+      
     </div>
   </div>
-  <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+  <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-16 lg:px-8">
     <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
       <div className="relative pl-9">
         <dt className="inline font-semibold text-gray-900">
