@@ -9,8 +9,9 @@ const navigation = [
   {
     title: 'Publications',
     links: [
-      { title: 'Unseal (Temp)', href: '/work/unseal' },
-      { title: 'More soon', href: '#' },
+      { title: 'Reprint', href: 'https://reprint.news' },
+      { title: 'Matinee (Soon)', href: '#' },
+      { title: 'Reserve Spot →', href: '#' },
       
     ],
   },

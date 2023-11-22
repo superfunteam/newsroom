@@ -1,5 +1,15 @@
 @tailwind base;
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 @font-face {
   font-family: 'Mona Sans';
   font-weight: 200 900;

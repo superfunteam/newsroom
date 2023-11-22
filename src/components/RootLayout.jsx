@@ -71,8 +71,9 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
+          <a href="#market" className="font-medium">Market</a>
           <Button href="/contact" invert={invert}>
-            <span className="text-lg">Call it Quits</span>
+            <span className="text-lg">Contact</span>
           </Button>
           <button
             ref={toggleRef}

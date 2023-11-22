@@ -33,7 +33,7 @@ export function SectionIntro({
               'block font-display tracking-tight [text-wrap:balance]',
               smaller
                 ? 'text-2xl font-semibold'
-                : 'text-4xl font-medium sm:text-5xl',
+                : 'text-4xl font-semibold sm:text-5xl',
               invert ? 'text-white' : 'text-neutral-950',
             )}
           >
