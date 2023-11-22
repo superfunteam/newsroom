@@ -440,7 +440,7 @@ export default async function Home() {
       <h2 className="text-base font-semibold leading-7 text-black">
         Pricing
       </h2>
-      <p className="mt-2 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+      <p className="mt-2 font-display text-5xl font-semibold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
         Free for existing, known pubs
       </p>
     </FadeIn>
