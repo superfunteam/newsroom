@@ -15,7 +15,7 @@ import logoReprint from '@/images/clients/reprint/logo-white.svg'
 import logoReprintBlack from '@/images/clients/reprint/logo-black.svg'
 import logoMatinee from '@/images/clients/matinee/logo-white.svg'
 import logoMatineeBlack from '@/images/clients/matinee/logo-black.svg'
-import imageLaptop from '@/images/laptop.jpg'
+import imageLaptop from '@/images/feature.png'
 import captureImage from '@/images/capture.png';
 import capturePixels from '@/images/capture-pixels.png';
 import { loadCaseStudies } from '@/lib/mdx'
@@ -139,17 +139,17 @@ function Services() {
         </p>
       </SectionIntro>
       <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
+        <div className="lg:flex lg:items-center lg:justify-end gap-12">
+          <div className="flex justify-center w-full">
+            <FadeIn className="">
+              <Image
                 src={imageLaptop}
                 sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
+                className="justify-center lg:justify-end mix-blend-lighten"
               />
             </FadeIn>
           </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+          <List className="mt-16 lg:mt-0 w-full">
             <ListItem title="A complete brand">
               A publication name, logo, colors, website, social channels, newsletters– we've got all the good stuff covered. Y'all stay focused on doing what writers do best: writing.
             </ListItem>
