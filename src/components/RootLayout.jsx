@@ -70,10 +70,10 @@ function Header({
             filled={logoHovered}
           />
         </Link>
-        <div className="flex items-center gap-x-8">
+        <div className="flex items-center gap-x-4 md:gap-x-8">
           <a href="#market" className="font-medium">Market</a>
           <Button href="/contact" invert={invert}>
-            <span className="text-lg">Contact</span>
+            <span className="text-sm md:text-lg">Contact</span>
           </Button>
           <button
             ref={toggleRef}
@@ -116,7 +116,7 @@ function NavigationItem({ href, children }) {
   return (
     <Link
       href={href}
-      className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
+      className="group flex items-center gap-4 relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
     >
       {children}
       <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
@@ -128,7 +128,7 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="#">Publications</NavigationItem>
+        <NavigationItem href="#">Pub Market <span className="bg-[#00EAC1] leading-none text-lime-950 rounded-full p-2 px-3 text-lg">NEW</span></NavigationItem>
         <NavigationItem href="#">Join Us</NavigationItem>
       </NavigationRow>
       <NavigationRow>

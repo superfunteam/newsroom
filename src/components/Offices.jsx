@@ -22,14 +22,14 @@ export function Offices({ invert = false, ...props }) {
     <ul role="list" {...props}>
       <li>
         <Office name="Clark Wimberly" invert={invert}>
-          Biz and Engineering<br />
-          @clarklab
+          Founder, Product<br />
+          <a href="https://twitter.com/clarklab">@clarklab</a>
         </Office>
       </li>
       <li>
         <Office name="Angie Wimberly" invert={invert}>
-          Design and Product<br />
-          @angiedoes
+          Founder, Design<br />
+          <a href="https://twitter.com/angiedoes">@angiedoes</a>
         </Office>
       </li>
     </ul>

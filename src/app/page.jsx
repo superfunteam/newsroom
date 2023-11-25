@@ -20,6 +20,7 @@ import captureImage from '@/images/capture.png';
 import capturePixels from '@/images/capture-pixels.png';
 import { loadCaseStudies } from '@/lib/mdx'
 
+
 const clients = [
   ['Reprint', logoReprint],
   ['Matinee', logoMatinee],
@@ -130,8 +131,11 @@ function Services() {
         title="From pink slip to publishing in 24hrs"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
+        <p className="mb-4">
+          We've all seen it happen: a beloved publication gets a new boss or owner, everyone is who ran things is fired (or better yet, everyone quits), and shortly after, a new author-owned publication is born.
+        </p>
         <p>
-          Everyone sticking together? Starting a new thing? We're totally here for that and we're a fraction of the price (or free). For real, shop around.
+        <strong>Newsroom is here to help.</strong>
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -161,13 +165,17 @@ function Services() {
           </List>
         </div>
       </Container>
+
+
     </>
   )
 }
 
+
+
+
 export const metadata = {
-  description:
-    'We are a development studio working at the intersection of design and technology.',
+  description: 'We make author-owned publications.'
 }
 
 export default async function Home() {
@@ -179,15 +187,15 @@ export default async function Home() {
         <FadeInStagger faster className="max-w-3xl">
           <FadeIn>
             <h1 className="font-display text-5xl font-semibold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Empowering author-owned publications</h1>
+            We make author-owned publications</h1>
           </FadeIn>
           <FadeIn key="fadeTwo">
             <p className="mt-6 text-xl text-neutral-600">
-            We've all seen it happen: a beloved publication gets a new boss or owner, everyone is who ran things is fired (or better yet, everyone quits), and shortly after, a new author-owned publication is born. Good.</p>
+            Complete, ready-to-write publications (with branding, website, newsletters) for independent teams of journalists looking to organize and own the whole stack.</p>
           </FadeIn>
           <FadeIn key="fadeThree">
           <p className="mt-6 text-xl text-neutral-600 font-bold">
-           Newsroom is here to help.</p>
+           <a href="#market" className="underline decoration-2 underline-offset-2">Browse available publications</a> →</p>
           </FadeIn>
         </FadeInStagger>
       </Container>
@@ -212,12 +220,10 @@ export default async function Home() {
       </FadeIn>
       <FadeIn><p className="font-bold mt-2 text-xl">Newsroom comes with everything your publication needs, ready-to-write™️.</p>
       </FadeIn>
-      <FadeIn><p className="font-bold mt-8 text-xl">
-      <Button href="/contact">
-            <span className="text-lg">See Available Properties →</span>
-      </Button>
-      </p>
-      </FadeIn>
+      <FadeIn>
+          <p className="mt-6 text-xl text-neutral-600 font-bold">
+           <a href="#market" className="underline decoration-2 underline-offset-2">Browse available publications</a> →</p>
+          </FadeIn>
     </div>
     </FadeInStagger>
     <div className="relative overflow-hidden pt-16 hidden">
@@ -358,7 +364,7 @@ export default async function Home() {
     </h2>
     </FadeIn>
     <FadeIn className="mt-4 text-xl text-gray-500 max-w-3xl">
-      A collection of ready-to-write publications that just need journalists. Assemble the team, there are stories to be told.
+      A collection of <strong>ready-to-write</strong> publications that just need journalists. Absolutely turnkey and ready to publish right now. Includes website, name, logo, art direction, as well as all <strong>Newsroom</strong> features and support during launch.
     </FadeIn>
     <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
       <FadeIn>
