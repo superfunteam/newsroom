@@ -10,18 +10,17 @@ const navigation = [
     title: 'Publications',
     links: [
       { title: 'Reprint', href: 'https://reprint.news' },
-      { title: 'Matinee (Soon)', href: '#' },
-      { title: 'Reserve Spot →', href: '#' },
+      { title: 'Matinee (Soon)', href: '/market' },
+      { title: 'Reserve Spot →', href: '/contact' },
       
     ],
   },
   {
     title: 'Company',
     links: [
-      { title: 'About', href: '#' },
-      { title: 'Process', href: '#' },
-      { title: 'Blog', href: '#' },
-      { title: 'Contact us', href: '#' },
+      { title: 'About', href: '/contact' },
+      { title: 'Pub Market', href: '/market' },
+      { title: 'Contact us', href: '/contact' },
     ],
   },
   {

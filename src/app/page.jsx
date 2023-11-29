@@ -18,7 +18,9 @@ import logoMatineeBlack from '@/images/clients/matinee/logo-black.svg'
 import imageLaptop from '@/images/feature.png'
 import captureImage from '@/images/capture.png';
 import capturePixels from '@/images/capture-pixels.png';
+import imageMarket from '@/images/market.webp'
 import { loadCaseStudies } from '@/lib/mdx'
+import { GridPattern } from '@/components/GridPattern'
 
 
 const clients = [
@@ -33,6 +35,7 @@ const clients = [
 ]
 
 function Clients() {
+
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
@@ -175,7 +178,8 @@ function Services() {
 
 
 export const metadata = {
-  description: 'We make author-owned publications.'
+  description: 'We make author-owned publications.',
+  other: { "view-transition": "same-origin" }
 }
 
 export default async function Home() {
@@ -195,7 +199,7 @@ export default async function Home() {
           </FadeIn>
           <FadeIn key="fadeThree">
           <p className="mt-6 text-xl text-neutral-600 font-bold">
-           <a href="#market" className="underline decoration-2 underline-offset-2">Browse available publications</a> →</p>
+           <a href="/market" className="underline decoration-2 underline-offset-2">Browse available publications</a> →</p>
           </FadeIn>
         </FadeInStagger>
       </Container>
@@ -356,87 +360,49 @@ export default async function Home() {
 
 
 
-      <div className="bg-white mt-16" id="market">
-  <FadeInStagger faster className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-    <FadeIn>
-    <h2 className="text-4xl font-semibold sm:text-5xl font-display font-semibold tracking-tight leading-none text-black flex gap-3 items-center">
-      Pub Market <span className="bg-[#00EAC1] leading-none text-lime-950 rounded-full p-2 px-3 text-lg">NEW</span>
-    </h2>
-    </FadeIn>
-    <FadeIn className="mt-4 text-xl text-gray-500 max-w-3xl">
-      A collection of <strong>ready-to-write</strong> publications that just need journalists. Absolutely turnkey and ready to publish right now. Includes website, name, logo, art direction, as well as all <strong>Newsroom</strong> features and support during launch.
-    </FadeIn>
-    <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
-      <FadeIn>
-      <a href="#" className="group block">
-        <div
-          aria-hidden="true"
-          className="relative aspect-[1/1.5] overflow-scroll no-scrollbar group-hover:scale-105 transition-all duration-300"
-        >
-          <img
-            src={captureImage.src}
-            alt="Brown leather key ring with brass metal loops and rivets on wood table."
-            className="w-full"
-          />
+      
 
-        </div>
-        <h3 className="mt-4 text-base font-semibold text-gray-900">
-          <img
-            src={logoReprintBlack.src}
-            alt="Brown leather key ring with brass metal loops and rivets on wood table."
-            className="w-24 mt-6 mb-2"
-          />
-        </h3>
-        <p className="mt-2 text-sm text-gray-500">
-          A general purpose site perfect for tech, finance, security, gaming, politics and more.
-        </p>
-      </a>
-      </FadeIn>
-      <FadeIn>
-      <a href="#" className="group block">
-        <div
-          aria-hidden="true"
-          className="relative aspect-[1/1.5] overflow-scroll no-scrollbar group-hover:scale-105 transition-all duration-300 bg-slate-200"
-        >
-          <img
-            src={capturePixels.src}
-            alt="Brown leather key ring with brass metal loops and rivets on wood table."
-            className="w-full opacity-50"
-          />
+      <div className="bg-white">
+  <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div className="relative isolate overflow-hidden bg-black px-6 pt-16 shadow-2xl rounded-4xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+      
+      <GridPattern
+        className="absolute inset-0 -z-10 h-full w-full fill-neutral-800 stroke-neutral-800 [mask-image:linear-gradient(to_bottom_left,white_50%,transparent_60%)]"
+        yOffset={-256}
+      />
 
-        </div>
-        <h3 className="mt-4 text-base font-semibold text-gray-900">
-          <img
-            src={logoMatineeBlack.src}
-            alt="Brown leather key ring with brass metal loops and rivets on wood table."
-            className="w-24 mt-7 mb-3"
-          />
-        </h3>
-        <p className="mt-2 text-sm text-gray-500">
-          A business and news site aimed legal, entertainment, policy, opinion, and more. Coming soon.
+      <div href="/market" className="mx-auto max-w-md text-left lg:mx-0 lg:flex-auto lg:py-32">
+        <h1 className="pubTitle text-4xl font-semibold sm:text-5xl font-display font-semibold tracking-tight leading-none text-white flex gap-3 items-center">
+            Pub Market <span className="bg-[#00EAC1] leading-none text-lime-950 rounded-full p-2 px-3 text-lg">NEW</span>
+          </h1>
+        <p className="mt-6 text-lg leading-6 text-white">
+          A collection of <strong>ready-to-write</strong> publications that just need journalists. Absolutely turnkey and ready to publish right now.
         </p>
-      </a>
-      </FadeIn>
-      <FadeIn>
-      <a href="#" className="group block">
-        <div
-          aria-hidden="true"
-          className="relative aspect-[1/1.5] overflow-scroll no-scrollbar group-hover:scale-105 transition-all duration-300 bg-slate-200"
-        >
-          
-
-        </div>
-        <h3 className="mt-4 text-base font-semibold text-gray-900">
-          Coming soon
-        </h3>
-        <p className="mt-1 text-sm text-gray-500">
-          Something else in mind? Get in touch today to make a reservation in our upcoming release rounds.
+        <p className="mt-6 text-lg leading-6 text-white">
+          Includes website, name, logo, art direction, all <strong>Newsroom</strong> features, and support during launch.
         </p>
-      </a>
-      </FadeIn>
+        <div className="mt-10 flex items-center justify-start gap-x-6 lg:justify-start">
+          <a
+            href="/market"
+            className="bg-white rounded-full px-5 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          >
+            View available publications
+          </a>
+        </div>
+      </div>
+      <div className="relative mt-16 h-80 lg:mt-8">
+        <FadeIn class="">
+        <div className="">
+          <Image className="absolute left-0 top-0 md:top-6 w-[57rem] max-w-none rounded-2xl bg-white/5 ring-1 ring-white/10"
+          src={imageMarket} />
+        </div>
+        </FadeIn>
+      </div>
     </div>
-  </FadeInStagger>
+  </div>
 </div>
+
+
 
 
 
@@ -478,7 +444,7 @@ export default async function Home() {
         <a
           href="#"
           aria-describedby="tier-freelancer"
-          className="mt-6 block py-3 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-black text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600"
+          className="mt-6 block py-3 rounded-full px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-black text-white shadow-sm hover:bg-[#00EAC1] hover:text-black transition-colors duration-300 focus-visible:outline-indigo-600"
         >
           Get Started
         </a>
@@ -586,7 +552,7 @@ export default async function Home() {
         <a
           href="#"
           aria-describedby="tier-startup"
-          className="mt-6 block py-3 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-black text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600"
+          className="mt-6 rounded-full block py-3 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-black text-white shadow-sm hover:bg-[#00EAC1] hover:text-black transition-colors duration-300 focus-visible:outline-indigo-600"
         >
           Get Started
         </a>
@@ -719,7 +685,7 @@ export default async function Home() {
         <a
           href="#"
           aria-describedby="tier-enterprise"
-          className="mt-6 block py-3 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-black shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600"
+          className="mt-6 rounded-full block py-3 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-black shadow-sm hover:bg-[#00EAC1] hover:text-black transition-colors duration-300 focus-visible:outline-indigo-600"
           >
           Contact Newsroom
         </a>

@@ -10,9 +10,9 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-              The thing ain't gonna build itself.
+              Getting sites online fast more than a decade.
             </h2>
-              <a className="mt-6 flex text-2xl bg-white font-bold inline p-3 px-5 !inline-block" href="/contact">
+              <a className="mt-6 flex text-2xl bg-white rounded-full font-bold inline p-3 px-5 !inline-block hover:bg-[#00EAC1] hover:text-black transition-colors duration-300" href="/contact">
                 Let's Talk
               </a>
             <div className="mt-10 border-t border-white/10 pt-10">

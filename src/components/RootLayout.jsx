@@ -71,7 +71,7 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-4 md:gap-x-8">
-          <a href="#market" className="font-medium">Market</a>
+          <a href="/market" className="font-medium">Market</a>
           <Button href="/contact" invert={invert}>
             <span className="text-sm md:text-lg">Contact</span>
           </Button>
@@ -128,8 +128,8 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="#">Pub Market <span className="bg-[#00EAC1] leading-none text-lime-950 rounded-full p-2 px-3 text-lg">NEW</span></NavigationItem>
-        <NavigationItem href="#">Join Us</NavigationItem>
+        <NavigationItem href="/market">Pub Market <span className="bg-[#00EAC1] leading-none text-lime-950 rounded-full p-2 px-3 text-lg">NEW</span></NavigationItem>
+        <NavigationItem href="/contact">Join Us</NavigationItem>
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="#">On Quitting</NavigationItem>
