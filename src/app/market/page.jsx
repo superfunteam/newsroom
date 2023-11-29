@@ -729,9 +729,9 @@ Off-canvas filters for mobile, show/hide based on off-canvas filters state.
 }
 
 export const metadata = {
-  title: 'Our Process',
+  title: 'Pub Market - Newsroom',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Ready-to-write publications that just need journalists. Absolutely turnkey and ready to publish right now.',
     other: { "view-transition": "same-origin" }
 }
 
