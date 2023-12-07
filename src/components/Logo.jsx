@@ -22,7 +22,7 @@ export function Logo({
       viewBox="0 0 90 12"
       aria-hidden="true"
       className={clsx(
-              'logo',
+              'logo group',
               invert ? 'border-red-400' : 'text-center',
             )}
       {...props}
@@ -60,7 +60,7 @@ export function Logo({
               invert ? 'fill-white' : 'text-center',
             )} d="M19 10.8647V1H21.5169L25.6712 7.96888H25.7659L25.6847 4.81597V1H27.7145V10.8647H25.3329L21.1786 4.04466H21.0839L21.138 6.89987V10.8647H19Z" fill="black"/>
       <path className={clsx(
-              'path',
+              'path group-hover:fill-[#00EAC1] transition',
               invert ? 'fill-white' : 'text-center',
             )} fill-rule="evenodd" clip-rule="evenodd" d="M12 0H0V12H12V0ZM6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8Z" fill="black"/>
 

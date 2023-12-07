@@ -199,7 +199,7 @@ export default async function Home() {
           </FadeIn>
           <FadeIn key="fadeThree">
           <p className="mt-6 text-xl text-neutral-600 font-bold">
-           <a href="/market" className="underline decoration-2 underline-offset-2">Browse available publications</a> →</p>
+           <a href="/market" className="underline decoration-2 underline-offset-2 hover:decoration-[#00EAC1]">Browse available publications</a> →</p>
           </FadeIn>
         </FadeInStagger>
       </Container>
@@ -226,7 +226,7 @@ export default async function Home() {
       </FadeIn>
       <FadeIn>
           <p className="mt-6 text-xl text-neutral-600 font-bold">
-           <a href="#market" className="underline decoration-2 underline-offset-2">Browse available publications</a> →</p>
+           <a href="#market" className="underline decoration-2 underline-offset-2 hover:decoration-[#00EAC1]">Browse available publications</a> →</p>
           </FadeIn>
     </div>
     </FadeInStagger>

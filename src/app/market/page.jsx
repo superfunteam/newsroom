@@ -15,9 +15,12 @@ import logoReprint from '@/images/clients/reprint/logo-white.svg'
 import logoReprintBlack from '@/images/clients/reprint/logo-black.svg'
 import logoMatinee from '@/images/clients/matinee/logo-white.svg'
 import logoMatineeBlack from '@/images/clients/matinee/logo-black.svg'
+import logoBoxBlack from '@/images/clients/box/logo-box.svg'
 import imageLaptop from '@/images/feature.png'
 import captureImage from '@/images/capture.png';
 import capturePixels from '@/images/capture-pixels.png';
+import captureBoxPixels from '@/images/capture-box-pixels.png';
+
 
 function Section({ title, image, children }) {
   return (
@@ -597,7 +600,7 @@ Off-canvas filters for mobile, show/hide based on off-canvas filters state.
                   />
 
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-gray-900">
+                <h3 className="h-6 mt-4 text-base font-semibold text-gray-900">
                   <img
                     src={logoReprintBlack.src}
                     alt="Brown leather key ring with brass metal loops and rivets on wood table."
@@ -622,7 +625,7 @@ Off-canvas filters for mobile, show/hide based on off-canvas filters state.
                   />
 
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-gray-900">
+                <h3 className="h-6 mt-4 text-base font-semibold text-gray-900">
                   <img
                     src={logoMatineeBlack.src}
                     alt="Brown leather key ring with brass metal loops and rivets on wood table."
@@ -640,14 +643,22 @@ Off-canvas filters for mobile, show/hide based on off-canvas filters state.
                   aria-hidden="true"
                   className="relative aspect-square md:aspect-[1/1.5] overflow-scroll no-scrollbar group-hover:scale-105 transition-all duration-300 bg-slate-200"
                 >
-                  
+                  <img
+                    src={captureBoxPixels.src}
+                    alt="Brown leather key ring with brass metal loops and rivets on wood table."
+                    className="w-full opacity-50"
+                  />
 
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-gray-900">
-                  Coming soon
+                <h3 className="h-6 mt-4 text-base font-semibold text-gray-900">
+                  <img
+                    src={logoBoxBlack.src}
+                    alt="Brown leather key ring with brass metal loops and rivets on wood table."
+                    className="w-14 mt-7 mb-3"
+                  />
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">
-                  Something else in mind? Get in touch today to make a reservation in our upcoming release rounds.
+                   Fresh, out-of-the-box corporate comms site for a growing tech startup
                 </p>
               </a>
               </FadeIn>
